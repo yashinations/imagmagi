@@ -1,0 +1,43 @@
+body{
+	background-color:#77ee77;
+	text-align:center;
+	width:99%;
+}
+#prompt{
+	width:50%;
+	margin:0% 25% 5% 25%;
+	border:2px solid black;
+	border-radius:4px;
+}
+input[type="button"]{
+	border:4px solid black;
+	background-color:#338833;
+	color:black;
+	font-size:24px;
+	padding:5px;
+	border-radius:8px;
+}
+input[type="button"]:hover{
+	border:1px solid black;
+	background-color:#118811;
+	color:black;
+}
+input[type="button"]:active{
+	border:1px solid black;
+	background-color:#00cc00;
+	color:black;
+}
+#canvas{
+	background-color:#AAFFAA;
+	border:10px solid black;
+	border-radius:8px;
+}
+#hidden-file-input{
+	visibility:hidden;
+}
+#file-download-button{
+	display:none;
+}
+#image-hidden-download{
+	visibility:hidden;
+}

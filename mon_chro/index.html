@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>mon_chrom</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">   
+	<meta name="description" content="Filter Photos with a Monochrome Color Scheme">
+	<meta name="keywords" content="monochrome,photo,filter">
+	<meta name="author" content="Aaron Yashinsky">	
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css" /> 
+</head>
+<body class="bg-dark">
+	<div class="alert alert-warning file-extension nodisplay" role="alert">
+	  <strong>Invalid image format!</strong> Please submit files with the JPG extension.
+	</div>	
+	<div class="container height-75 intro-delay text-center custom-container"> 			
+		<div class="height-75 text-center step_1">			
+			<div class="color_hot color-choice step_1">
+				<!-- <p class="text-light text-center h1">Pick Foreground Color</p> -->
+				<div class="hot_color_table_containter">
+					<table class="hot_color_table">
+						<tr>
+							<td class="color_choice pick_red" data-hot-color-red="255" data-hot-color-green="0" data-hot-color-blue="0" >							
+							</td>
+							<td class="color_choice pick_orange" data-hot-color-red="255" data-hot-color-green="165" data-hot-color-blue="0" >							
+							</td>
+							<td class="color_choice pick_yellow" data-hot-color-red="255" data-hot-color-green="255" data-hot-color-blue="0" >							
+							</td>						
+						</tr>				
+						<tr>
+							<td class="color_choice pick_green" data-hot-color-red="0" data-hot-color-green="128" data-hot-color-blue="0" >							
+							</td>
+							<td class="color_choice pick_blue" data-hot-color-red="0" data-hot-color-green="0" data-hot-color-blue="255" >							
+							</td>
+							<td class="color_choice pick_turquoise" data-hot-color-red="64" data-hot-color-green="240" data-hot-color-blue="224" >							
+							</td>						
+						</tr>					
+						<tr>
+							<td class="color_choice pick_purple" data-hot-color-red="238" data-hot-color-green="130" data-hot-color-blue="238" >							
+							</td>
+							<td class="color_choice pick_lavender" data-hot-color-red="255" data-hot-color-green="0" data-hot-color-blue="255" >						
+							</td>
+							<td class="color_choice pick_magenta" data-hot-color-red="255" data-hot-color-green="192" data-hot-color-blue="203">							
+							</td>						
+						</tr>
+					</table>
+					<div class="choice_made hot_color_containter">
+					</div>
+				</div>
+			</div>
+			<div class="text-center step_1">
+				<input id="submit_photo" type="file" class="nodisplay" onclick="file_initialize();">
+			</div>
+		</div>
+		<div class="text-center step_2">			
+			<div class="final-image-container">
+				<img title="right click to download,left click to restart" class="display_filtered_photo  override-align-middle" src=""  onclick='location.reload();'/>
+			</div>			
+		</div>
+		<div class="loading_overlay text-center">
+			<div class="loader override-align-middle">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
